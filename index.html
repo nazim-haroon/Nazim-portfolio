@@ -3,6 +3,14 @@
 
 <head>
 
+    <title>Nazim Shaikh | Portfolio </title>
+
+<meta name="description" content="Nazim Shaikh - Data Science Student specializing in Python, Machine Learning, AI and Web Development.">
+
+<meta name="keywords" content="Nazim Shaikh, Data Science, Python, Machine Learning, Portfolio">
+
+<meta name="author" content="Nazim Shaikh">
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -14,6 +22,8 @@
 
 <link rel="stylesheet"
 href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+<link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
 
 </head>
 
@@ -48,9 +58,8 @@ Nazim<span>.</span>
 
 <i class="fa-solid fa-moon" id="theme"></i>
 
-<a href="#" class="resume-btn">
-<i class="fa-solid fa-download"></i>
-Download Resume
+<a href="resume.pdf" download class="resume-btn">
+    <i class="fa-solid fa-download"></i> Download Resume
 </a>
 
 </div>
@@ -59,7 +68,9 @@ Download Resume
 
 </header>
 
-<section class="hero" id="home">
+<section class="hero" id="home" data-aos="fade-up">
+
+    
 
 <div class="hero-left">
 
@@ -108,13 +119,21 @@ Let's Connect
 
 <div class="social">
 
-<a href="#"><i class="fab fa-linkedin"></i></a>
+<a href="https://www.linkedin.com/in/nazim-shaikh-94a649376" target="_blank">
+    <i class="fab fa-linkedin"></i>
+</a>
 
-<a href="#"><i class="fab fa-github"></i></a>
+<a href="https://github.com/nazim-haroon" target="_blank">
+    <i class="fab fa-github"></i>
+</a>
 
-<a href="#"><i class="fas fa-envelope"></i></a>
+<a href="mailto:naaaazimsk@gmail.com">
+    <i class="fas fa-envelope"></i>
+</a>
 
-<a href="#"><i class="fab fa-whatsapp"></i></a>
+<a href="https://instagram.com/nazimsk_10" target="_blank">
+    <i class="fab fa-instagram"></i>
+</a>
 
 </div>
 
@@ -176,7 +195,7 @@ Let's Connect
 
 <!-- ABOUT -->
 
-<section class="about" id="about">
+<section class="about" id="about" data-aos="fade-right">
 
 <h2 class="section-title">About Me</h2>
 
@@ -257,7 +276,7 @@ through projects, certifications, and hands-on practice.
 
 <!-- SKILLS SECTION -->
 
-<section class="skills" id="skills">
+<section class="skills" id="skills" data-aos="fade-left">
 
 <h2 class="section-title">
 My Skills
@@ -353,7 +372,7 @@ My Skills
 
 <!-- TECH STACK -->
 
-<section class="tech">
+<section class="tech" data-aos="zoom-in">
 
 <h2 class="section-title">
 Tools & Technologies
@@ -415,7 +434,7 @@ Tools & Technologies
 
 </section>
 
-<section class="projects" id="projects">
+<section class="projects" id="projects" data-aos="fade-up">
 
     <h2 class="section-title">Upcoming Project</h2>
 
@@ -455,7 +474,7 @@ Tools & Technologies
 
 </section>
 
-<section class="certificates" id="certificates">
+<section class="certificates" id="certificates" data-aos="zoom-in-up">
 
     <h2 class="section-title">My Certificates</h2>
 
@@ -504,7 +523,7 @@ Tools & Technologies
     </div>
 
 </section>
-<section class="contact" id="contact">
+<section class="contact" id="contact" data-aos="fade-right">
 
     <h2 class="section-title">Get In Touch</h2>
 
@@ -538,17 +557,38 @@ Tools & Technologies
         </div>
 
         <!-- Right Side -->
-        <form class="contact-form">
+                <form class="contact-form" id="contact-form">
+             <input 
+type="text"
+id="name"
+name="name"
+placeholder="Your Name"
+required>
 
-            <input type="text" placeholder="Your Name">
+            <input 
+type="email"
+id="email"
+name="email"
+placeholder="Your Email"
+required>
 
-            <input type="email" placeholder="Your Email">
+            <input 
+type="text"
+id="subject"
+name="subject"
+placeholder="Subject"
+required>
 
-            <input type="text" placeholder="Subject">
+            <textarea
+id="message"
+name="message"
+rows="6"
+placeholder="Your Message"
+required></textarea>
 
-            <textarea rows="6" placeholder="Your Message"></textarea>
-
-            <button type="submit">Send Message</button>
+            <button type="submit">
+Send Message
+</button>
 
         </form>
 
@@ -556,7 +596,7 @@ Tools & Technologies
 
 </section>
 
-<section class="cta">
+<section class="cta" data-aos="flip-up">
 
     <div class="cta-content">
 
@@ -586,8 +626,7 @@ Tools & Technologies
 
 </section>
 
-<footer class="footer">
-
+<footer class="footer" data-aos="fade-up">
     <div class="footer-content">
 
         <h2>Nazim</h2>
@@ -617,7 +656,20 @@ Tools & Technologies
     </div>
 
 </footer>
+
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
 <script src="script.js"></script>
+
+
+
+<script>
+AOS.init({
+    duration: 1000,
+    once: true
+});
+</script>
 
 </body>
 
